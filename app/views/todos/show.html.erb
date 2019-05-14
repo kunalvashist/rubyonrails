@@ -1,12 +1,12 @@
 <h1>Show All the Todo's</h1>
 
 <p>
-  Name: <%= @showtodo.name %>
+  Name: <%= @todo.name %>
 </p>
 
 <p>
-  Description: <%= @showtodo.description %>
+  Description: <%= @todo.description %>
 </p>
 
-<%= link_to "Edit", edit_todo_path(@showtodo) %>
+<%= link_to "Edit", edit_todo_path(@todo) %>
 <%= link_to "Listing Page", todos_path %>
