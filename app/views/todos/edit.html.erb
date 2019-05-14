@@ -1,28 +1,3 @@
-<h1>NEw Fiel</h1>
+<h1>Edit Fields</h1>
 
-<% if @todo.errors.any? %>
-  <h2>Error in the form</h2>
-  <ul>
-    <% @todo.errors.full_messages.each do |e| %>
-      <li><%= e %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= form_for @todo do |f| %>
-  <p>
-    <%= f.label :name%>
-    <br>
-    <%= f.text_field :name%>
-  </p>
-
-  <p>
-    <%= f.label :description%>
-    <br>
-    <%= f.text_area :description%>
-  </p>
-
-  <p>
-    <%= f.submit :submit%>
-  </p>
-<% end %>
+<%= render "form" %>
